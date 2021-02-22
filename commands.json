@@ -37,7 +37,7 @@
   },
   {
     "CommandName": "checkconfigui",
-    "CommandData": "http://quadflightdiy.com/wp-content/uploads/2017/07/Home-Assistant-1.png"
+    "CommandData": "Check your config: <https://my.home-assistant.io/redirect/server_controls>"
   },
   {
     "CommandName": "rest_api",
@@ -229,7 +229,7 @@
   },
   {
     "CommandName": "getting_started",
-    "CommandData": "When you're getting started, take the time to read [the docs](https://home-assistant.io/docs/) and have a look at the [supported components](https://home-assistant.io/components/). Check out some [worked examples](https://home-assistant.io/cookbook/) and people's live [GitHub repositories](https://github.com/search?o=desc&q=topic%3Ahome-assistant-config&s=updated&type=Repositories)."
+    "CommandData": "When you're getting started, take the time to read [the docs](https://home-assistant.io/docs/) and have a look at the [supported components](https://home-assistant.io/components/). Check out [Blueprints](https://community.home-assistant.io/c/blueprints-exchange/53) and people's live [GitHub repositories](https://github.com/search?o=desc&q=topic%3Ahome-assistant-config&s=updated&type=Repositories)."
   },
   {
     "CommandName": "rule4",
@@ -337,7 +337,7 @@
   },
   {
     "CommandName": "troubleshooting",
-    "CommandData": "If you're having problems with your updates to your configuration:\n* Check the [troubleshooting steps](https://home-assistant.io/docs/configuration/troubleshooting/)\n* Check your log file - remembering you may need to set [logger](https://www.home-assistant.io/integrations/logger#default) to `info` or `debug`\n* Explain what the problem you're having is - [sharing](https://paste.ubuntu.com/) configuration, errors, and logs"
+    "CommandData": "If you're having problems with your updates to your configuration:\n* Check the [troubleshooting steps](https://home-assistant.io/docs/configuration/troubleshooting/)\n* Check [your log file](https://my.home-assistant.io/redirect/logs) - remembering you may need to set [logger](https://www.home-assistant.io/integrations/logger#default) to `info` or `debug`\n* Explain what the problem you're having is - [sharing](https://paste.ubuntu.com/) configuration, errors, and logs"
   },
   {
     "CommandName": "hassctl",
@@ -361,7 +361,7 @@
   },
   {
     "CommandName": "device_class",
-    "CommandData": "[Binary sensors](https://www.home-assistant.io/components/binary_sensor/#device-class) and [sensors](https://www.home-assistant.io/integrations/sensor#device-class) have device classes that change how things look in the frontend."
+    "CommandData": "[Binary sensors](https://www.home-assistant.io/components/binary_sensor/#device-class) and [sensors](https://www.home-assistant.io/integrations/sensor#device-class) have device classes that change how things look in the frontend and are shared with Google/Alexa."
   },
   {
     "CommandName": "secrets",
@@ -393,7 +393,7 @@
   },
   {
     "CommandName": "which",
-    "CommandData": "Not sure which install you're using? If you have [`system_health`](https://www.home-assistant.io/integrations/system_health) enabled you can check _Configuration -> Info_, or see the following.\n\n* If you bought the Home Assistant Blue, you're using HassOS, flashed an image, or booted a VM with an image you're using <#330990055533576204>\n\n* If you installed Linux and then ran a script to install HA _and_ have add-ons then you have <#330944238910963714>\n\n* If you're running `docker` commands or use a Docker manager and have _no add-ons_ then you have <#449717345808547842>\n\n* Finally, if you use `pip` to install or upgrade you have <#551864459891703809>\n\n**Having difficulty chosing an install method?** See [this blog post](https://www.home-assistant.io/blog/2020/05/26/installation-methods-and-community-guides-wiki/#supported-installation-methods) for guidance."
+    "CommandData": "Not sure which install you're using? Check the [Home Assistant info page](https://my.home-assistant.io/redirect/info)"
   },
   {
     "CommandName": "forum",
@@ -493,7 +493,7 @@
   },
   {
     "CommandName": "monster-card",
-    "CommandData": "The monster card was repalced by [auto entities](https://github.com/thomasloven/lovelace-auto-entities) which is a magical type of card. Because it's dynamic if you're smart about it, you can have one card that adapts and that you don't need to touch when adding new entities & sensors to your setup. Supports both inclusion and exclusion filters with wildcard for `entity_id`"
+    "CommandData": "The monster card was replaced by [auto entities](https://github.com/thomasloven/lovelace-auto-entities) which is a magical type of card. Because it's dynamic if you're smart about it, you can have one card that adapts and that you don't need to touch when adding new entities & sensors to your setup. Supports both inclusion and exclusion filters with wildcard for `entity_id`"
   },
   {
     "CommandName": "tinkerer",
@@ -589,7 +589,7 @@
   },
   {
     "CommandName": "moved",
-    "CommandData": "In 0.97 and beyond some menu options have moved. If you can't find an option you used to have try enabling 'Advanced Mode' (go to your HA user profile to find this option), and then go to Configuration > Server Control"
+    "CommandData": "In 0.97 and beyond some menu options have moved. If you can't find an option you used to have try enabling 'Advanced Mode' (go to your HA user profile to find this option), and then go to [Configuration > Server Control](https://my.home-assistant.io/redirect/server_controls)"
   },
   {
     "CommandName": "hass_io",
@@ -757,7 +757,7 @@
   },
   {
     "CommandName": "states",
-    "CommandData": "The _States_ screen (under _Developer Tools_) is your truth table for what Home Assistant knows. Every entity is listed here, along with the state the system knows (instead of the translated value you see elsewhere), and all attributes."
+    "CommandData": "The [_States_ screen](https://my.home-assistant.io/redirect/developer_states) is your truth table for what Home Assistant knows. Every entity is listed here, along with the state the system knows (instead of the translated value you see elsewhere), and all attributes."
   },
   {
     "CommandName": "docker",
