@@ -802,5 +802,13 @@
   {
     "CommandName": "readme",
     "CommandData": "Remember, a few hours of trial and error can save you several minutes of reading the documentation."
+  },
+  {
+    "CommandName": "blue",
+    "CommandData": "The [Home Assistant Blue](https://www.home-assistant.io/blue) is an ODROID-N2+ in a custom case."
+  },
+  {
+    "CommandName": "amber",
+    "CommandData": "See the <#887766501514412032> channel for everything to do with the [Home Assistant Amber](https://www.home-assistant.io/amber)."
   }
 ]
