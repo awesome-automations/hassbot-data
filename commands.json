@@ -681,7 +681,7 @@
   },
   {
     "CommandName": "pickyourstick",
-    "CommandData": "Buy something CC2652 based. [This list](https://www.zigbee2mqtt.io/information/supported_adapters.html) is a good one, both Tube and Electrolama have been proven to have excellent customer service. The current generation of EZSP sticks ([see here for some](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269)) are also a good choice for ZHA.\n\nThe Sonoff ZBbridge isn't advised since it uses WiFi, and the HUSBZB-1 uses an older chipset so should be avoided."
+    "CommandData": "Buy something CC2652 based. [This list](https://www.zigbee2mqtt.io/information/supported_adapters.html) is a good one, both Tube and Electrolama have been proven to have excellent customer service. The current generation of EZSP sticks ([see here for some](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269)) are also a good choice for ZHA.\n\nAnything CC2530 or CC2531 based should be avoided - they're old, slow, and only suitable for a dozen or so devices. The Sonoff ZBbridge isn't advised since it uses WiFi (built in interference), and the HUSBZB-1 uses an older chipset so should be avoided."
   },
   {
     "CommandName": "tagging",
