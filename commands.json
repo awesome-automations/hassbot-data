@@ -32,14 +32,6 @@
     "CommandData": "If you want to test out your MQTT install from your pi, first install [the client](https://mosquitto.org/2013/01/mosquitto-debian-repository/) and then use the following command to subscribe to all topics on your server:\n```shell\n$ mosquitto_sub -h IP_ADDRESS -u 'pi' -P 'raspberry' -t '#' -v\n```"
   },
   {
-    "CommandName": "checkconfig",
-    "CommandData": "http://quadflightdiy.com/wp-content/uploads/2017/07/Home-Assistant-1.png"
-  },
-  {
-    "CommandName": "checkconfigui",
-    "CommandData": "http://quadflightdiy.com/wp-content/uploads/2017/07/Home-Assistant-1.png"
-  },
-  {
     "CommandName": "rest_api",
     "CommandData": "<https://developers.home-assistant.io/docs/external_api_rest>"
   },
