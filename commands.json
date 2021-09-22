@@ -777,11 +777,11 @@
   },
   {
     "CommandName": "reply",
-    "CommandData": "When using Discord's _Reply_ feature it defaults to pinging the person you reply to, which can get frustrating for the target. Click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar.\n\nYou have to change this every time (thank the Discord devs for that)."
+    "CommandData": "When using Discord's _Reply_ feature it defaults to pinging the person you reply to, which can get frustrating for the target. Use _Shift + click_ on the _Reply_ option, or click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar.\n\nYou have to change this every time (thank the Discord devs for that)."
   },
   {
     "CommandName": "ffs",
-    "CommandData": "When using Discord's _Reply_ feature it defaults to pinging the person you reply to, which can get **very frustrating for the target**. Click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar - you have to do this on every reply.\n\nOr don't, and just wait for the recipient to get annoyed enough to block you."
+    "CommandData": "When using Discord's _Reply_ feature it defaults to pinging the person you reply to, which can get **very frustrating for the target**. Use _Shift + click_ on the _Reply_ option, or click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar - you have to do this on every reply.\n\nOr don't, and just wait for the recipient to get annoyed enough to block you."
   },
   {
     "CommandName": "raccoon",
