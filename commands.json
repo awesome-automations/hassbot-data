@@ -806,5 +806,9 @@
   {
     "CommandName": "trigger",
     "CommandData": "There are three sections to an automation:\n\n* [**`trigger`**](https://www.home-assistant.io/docs/automation/trigger/): When _any_ of these _becomes true_ the automation starts processing.\n* [**`condition`**](https://www.home-assistant.io/docs/automation/condition/): These are checked after a `trigger` starts the processing, and must _be true_ for the automation to continue.\n* [**`action`**](https://www.home-assistant.io/docs/scripts/): This is the part that does something, and can also include further conditions."
+  },
+  {
+    "CommandName": "hello",
+    "CommandData": "Please don't just say [hello](https://nohello.net/), post your question too."
   }
 ]
