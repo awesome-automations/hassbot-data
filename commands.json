@@ -810,5 +810,13 @@
   {
     "CommandName": "hello",
     "CommandData": "Please don't just say [hello](https://nohello.net/), post your question too."
+  },
+  {
+    "CommandName": "hi",
+    "CommandData": "Please don't just say [hi](https://nohello.net/), post your question too."
+  },
+  {
+    "CommandName": "hasswp",
+    "CommandData": "Don't use HassWP, it's unsupported and unsupportable. It runs Home Assistnat directly in Windows, which means many things won't work, and relies on the developer to keep it updated (which often isn't the case).\n\nJust use a [supported installation approach](https://www.home-assistant.io/installation#compare-installation-methods) and you'll have less pain."
   }
 ]
