@@ -505,7 +505,7 @@
   },
   {
     "CommandName": "images",
-    "CommandData": "Please use [imgur](https://imgur.com/) or other image sharing web sites, and share the link here.\n\nImage posting is blocked in most channels to discourage people from sharing text as images."
+    "CommandData": "Please use [imgur](https://imgur.com/) or other image sharing web sites, and share the link here.\n\nImage posting is blocked in most channels to discourage people from sharing text as images. Sharing text as images assumes that everybody sees the world as you do, which isn't the case. Some people are colour blind, or have visual impairment that means they can't make sense of an image of text."
   },
   {
     "CommandName": "tracker-owntracks",
