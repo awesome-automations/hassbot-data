@@ -822,5 +822,9 @@
   {
     "CommandName": "pr",
     "CommandData": "If you have an open PR and are waiting for feedback, please be patient and do not beg for a review. We have a huge backlog of PRs at any given moment and while the core reviewers do their best to get to PRs in a timely fashion, what's considered timely has grown over time. The best way that you can help us get to your PRs faster is to look at other PRs and add your reviews - even though PRs need a core reviewer for a formal approval, reviews from the community will help reduce the back and forth and make reviews easier for the core team.\n\nWith all that being said, if you have an open PR that gets a stale label added to it, add a comment so the bot will remove the label, and THEN you can post here asking for help since we want to make sure that PRs don't get auto-closed because of a lack of feedback."
+  },
+  {
+    "CommandName": "schedy",
+    "CommandData": "[Schedy](https://hass-apps.readthedocs.io/en/stable/apps/schedy/) is a highly-configurable, comfortable to use multi-purpose scheduler for Home Assistant that controls different types of actors such as switches and thermostats based on powerful rules while still facilitating manual intervention at any time.\n\nThe goal is to provide an easy solution for conventional scheduling (e.g. by time of day and day of week) while leaving advanced users plenty of room for customization with arbitrarily complex rules."
   }
 ]
