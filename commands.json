@@ -297,7 +297,7 @@
   },
   {
     "CommandName": "nuc",
-    "CommandData": "To setup Home Assistant on Intel NUC i7, follow [this guide](https://chris.0x711.de/index.php/2018/01/31/setting-up-home-assistant-in-a-virtual-environment-on-intel-nuc/)"
+    "CommandData": "To setup Home Assistant on Intel NUC i7, follow [this guide](https://chris.0x711.de/2018-01-31-setting-up-home-assistant-in-a-virtual-environment-on-intel-nuc/)"
   },
   {
     "CommandName": "Videos",
