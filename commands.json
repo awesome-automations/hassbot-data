@@ -513,7 +513,7 @@
   },
   {
     "CommandName": "issues",
-    "CommandData": "Want to see what issues are open (or were open and are now closed)?\n\n* [The core (backend)](https://github.com/home-assistant/core/issues) - for HA itself, and integrations\n* [The frontend (UI)](https://github.com/home-assistant/frontend/issues) - for cards and display issues\n* [The Supervisor](https://github.com/home-assistant/supervisor)\n* [HassOS](https://github.com/home-assistant/operating-system/issues)\n* [The documentation](https://github.com/home-assistant/home-assistant.io/issues)\n\nFinally, don't forget to check for any [alerts](https://alerts.home-assistant.io/)"
+    "CommandData": "Want to see what issues are open (or were open and are now closed)?\n\n* [The core (backend)](https://github.com/home-assistant/core/issues) - for HA itself, and integrations\n* [The frontend (UI)](https://github.com/home-assistant/frontend/issues) - for cards and display issues\n* [The Supervisor](https://github.com/home-assistant/supervisor)\n* [HassOS](https://github.com/home-assistant/operating-system/issues)\n* [The documentation](https://github.com/home-assistant/home-assistant.io/issues)\n\nDon't forget to check for any [alerts](https://alerts.home-assistant.io/)\n\nIf you think an upgrade broke something then:\n1. Downgrade to the previous version to check if it works correctly there\n2. If it does then upgrade to the new version\n3. change the `logger` settings for that integration to `debug`\n4. Look in the logs for errors\n5. Open an issue, following the template provided and including the log information"
   },
   {
     "CommandName": "llat",
