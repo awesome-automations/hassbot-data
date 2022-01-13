@@ -9,7 +9,7 @@
   },
   {
     "CommandName": "share",
-    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <https://www.codepile.net/> (select _YAML_ as the language)\n* <https://paste.debian.net/> (select _YAML_ as the language)\n* <https://hastebin.com/> (sometimes may not allow you to save)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
+    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <https://www.codepile.net/> (select _YAML_ as the language)\n* <https://paste.debian.net/> (select _YAML_ as the language)\n* <https://dpaste.org/> (you guessed it, select _YAML_)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
   },
   {
     "CommandName": "z-wave",
