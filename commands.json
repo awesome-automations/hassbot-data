@@ -497,7 +497,7 @@
   },
   {
     "CommandName": "ask",
-    "CommandData": "[Don't ask to ask](https://dontasktoask.com/), just ask your question. Then people can answer when they're around.\n\nWhen you do ask a question, try to provide as much background detail as possible. Ask yourself these questions first so that others don't have to:\n\n1. *What version of the Home Assistant are you running? (remember, _last_ isn't a version)*\n2. *What exactly are you trying to do that won't work?*\n3. *Is the problem uniform or erratic?*\n4. *What's the exact error message?*\n5. *When did it arise?*\n6. *What exactly don't you \\\"get\\\"?*\n7. *Can you [share](https://paste.ubuntu.com/) sample code, ideally with line errors where the error occurs?*"
+    "CommandData": "[Don't ask to ask](https://dontasktoask.com/), just ask your question. Then people can answer when they're around.\n\nWhen you do ask a question, try to provide as much background detail as possible. Ask yourself these questions first so that others don't have to:\n\n1. *What version of the Home Assistant are you running? (remember, _last_ isn't a version)*\n2. *What exactly are you trying to do that won't work?*\n3. *Is the problem uniform or erratic?*\n4. *What's the exact error message?*\n5. *When did it arise?*\n6. *What exactly don't you \\\"get\\\"?*\n7. *Can you [share](https://www.codepile.net/) sample code, ideally with line errors where the error occurs?*"
   },
   {
     "CommandName": "question",
