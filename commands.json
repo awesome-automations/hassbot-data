@@ -308,10 +308,6 @@
     "CommandData": "[Groups](https://home-assistant.io/integrations/group/) allow the user to combine multiple entities into one."
   },
   {
-    "CommandName": "hassio-version",
-    "CommandData": "The [latest version information](https://s3.amazonaws.com/hassio-version/stable.json) for various Home Assistant OS components."
-  },
-  {
     "CommandName": "dale3h",
     "CommandData": "AKA [Dale Higgs](https://github.com/dale3h/homeassistant-config), the guru and codesmith ninja (aka Jinja Ninja) who cures most of our hair-pulling\n\nIf you have received any significant help on the Home Assistant Discord server, it is likely due to Dale's expertise and general good-natured spirit."
   },
@@ -385,7 +381,7 @@
   },
   {
     "CommandName": "which",
-    "CommandData": "Not sure which install you're using? If you have [`system_health`](https://www.home-assistant.io/integrations/system_health) enabled you can check [_Configuration -> Info_](https://my.home-assistant.io/redirect/info) -> _Installation Type_, or see the following.\n\n* If you bought the Home Assistant Blue, flashed an image, or booted a VM with an image you're using <#330990055533576204>\n\n* If you installed Linux and then ran a script to install HA _and_ have add-ons then you have <#330944238910963714>\n\n* If you're running `docker` commands or use a Docker manager and have _no add-ons_ or Supervisor then you have <#449717345808547842>\n\n* Finally, if you use `pip` to install or upgrade you have <#551864459891703809>\n\n**Having difficulty chosing an install method?** See [this summary](https://www.home-assistant.io/installation#compare-installation-methods) for guidance."
+    "CommandData": "Not sure which install you're using? If you have [`system_health`](https://www.home-assistant.io/integrations/system_health) enabled you can check [_Configuration -> System -> Info_](https://my.home-assistant.io/redirect/info) -> _Installation Type_, or see the following.\n\n* If you bought the Home Assistant Blue, flashed an image, or booted a VM with an image you're using Home Assistant OS\n\n* If you installed Linux and then ran a script to install HA _and_ have add-ons then you have Home Assistant Supervised\n\n* If you're running `docker` commands or use a Docker manager and have _no add-ons_ or Supervisor then you have Home Assistant Container\n\n* Finally, if you use `pip` to install or upgrade you have Home Assistant Core\n\n**Having difficulty chosing an install method?** See [this summary](https://www.home-assistant.io/installation#compare-installation-methods) for guidance."
   },
   {
     "CommandName": "forum",
@@ -430,10 +426,6 @@
   {
     "CommandName": "nicolaz",
     "CommandData": "My [Github Repo](https://github.com/klaasnicolaas/Smarthome-homeassistant-config)"
-  },
-  {
-    "CommandName": "32bit",
-    "CommandData": "The 32bit image is recomended over 64bit because of addon compatibility, performance issues and none of these boards has +4GB of RAM, so you would not get any real advantage with it."
   },
   {
     "CommandName": "sinker1345",
@@ -580,14 +572,6 @@
     "CommandData": "Discord isn't like IRC, you don't have to tag people on every response. Keep in mind that every time you tag somebody, they get a notification ping. That can very quickly become annoying and people may block you.\n\nWhen using Discord's new _Reply_ feature it defaults to pinging the person you reply to, click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar.\n\nYou have to change this every time (thank the Discord devs for that)."
   },
   {
-    "CommandName": "moved",
-    "CommandData": "In 0.97 and beyond some menu options have moved. If you can't find an option you used to have try enabling 'Advanced Mode' (go to your HA user profile to find this option), and then go to Configuration > Server Control"
-  },
-  {
-    "CommandName": "hass_io",
-    "CommandData": "[Home Assistant Core](https://www.home-assistant.io) is the software we all run. [Home Assistant](https://www.home-assistant.io/hassio/) (previously called Hass.io) is _one of_ the ways you can [install](https://www.home-assistant.io/docs/installation/) **Home Assistant Core**. You're still running Home Assistant Core."
-  },
-  {
     "CommandName": "tediore",
     "CommandData": "It's dangerous to go alone! Check out my [GitHub](https://github.com/Tediore/My-HASS-config)."
   },
@@ -666,10 +650,6 @@
   {
     "CommandName": "error",
     "CommandData": "Please don't say _I have an error_ or describe an error. Share the whole actual error message so we can help you."
-  },
-  {
-    "CommandName": "compare",
-    "CommandData": "Not sure which install method to use, here's a [simple summary](https://www.home-assistant.io/faq/ha-vs-hassio/):\n\n* [Home Assistant](https://www.home-assistant.io/hassio/installation/): All in one solution with the ability to install other software though the UI (called add-ons), and manage backups in the UI (called snapshots). Installs as an image or on top of Debian/Ubuntu.\n* [Docker](https://www.home-assistant.io/docs/installation/docker/): For those already at comfortable with running on Docker. You install other software and manage backups yourself. Consider another option if you're using Windows or macOS.\n* [venv](https://www.home-assistant.io/docs/installation/raspberry-pi/): For those Linux admins or other crazy folks who want to run bare metal. You do everything, including rebuilding your venv with new Python versions. Don't try this method on Windows.\n\nTL/DR: Use what works for you."
   },
   {
     "CommandName": "pickyourstick",
@@ -762,18 +742,6 @@
   {
     "CommandName": "security",
     "CommandData": "If you have questions about the security bulletin the only place to find the answers is in [the blog post](https://www.home-assistant.io/blog/2021/01/14/security-bulletin/). If the information isn't there we can't tell you, because we don't know either.\n\nPS: We also don't know when it'll be updated.\n\nIf you have any questions, they're best asked on the linked [forum thread](https://community.home-assistant.io/t/security-bulletin/268456/)."
-  },
-  {
-    "CommandName": "lost_os",
-    "CommandData": "Oh, hi there :wave: You seem to be lost.\n\nI know the naming convention for the install methods is confusing. Having Core be a method and the software at the heart of it all doesn't help. That and having three methods that _use_ Docker.\n\nHowever, this isn't your install method, so we can't really help you effectively here. You should head over to <#330990055533576204> where people know Home Assistant OS and can help you.\n\nIf you want to mute and hide this channel before you go then you won't end up here in error again, and should get help faster."
-  },
-  {
-    "CommandName": "lost_supervised",
-    "CommandData": "Oh, hi there :wave: You seem to be lost.\n\nI know the naming convention for the install methods is confusing. Having Core be a method and the software at the heart of it all doesn't help. That and having three methods that _use_ Docker.\n\nHowever, this isn't your install method, so we can't really help you effectively here. You should head over to <#330944238910963714> where people know Home Assistant Supervised and can help you.\n\nIf you want to mute and hide this channel before you go then you won't end up here in error again, and should get help faster."
-  },
-  {
-    "CommandName": "lost",
-    "CommandData": "Oh, hi there :wave: You seem to be lost.\n\nI know the naming convention for the install methods is confusing. Having Core be a method and the software at the heart of it all doesn't help. That and having three methods that _use_ Docker.\n\nHowever, this isn't your install method, so we can't really help you effectively here. Look in _Configuration -> Info_ for your _Installation Method_ and then go to the channel with that name. There you'll find people who know your method and can help you.\n\nIf you want to mute and hide this channel before you go then you won't end up here in error again, and should get help faster."
   },
   {
     "CommandName": "reply",
