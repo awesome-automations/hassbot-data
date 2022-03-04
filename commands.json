@@ -613,7 +613,7 @@
   },
   {
     "CommandName": "hassio",
-    "CommandData": "Hass.io was the old name for the appliance like install option, that _uses_ Docker. It was renamed in January 2020 and is now called _Home Assistant OS_ (see <#330990055533576204>)."
+    "CommandData": "Hass.io was the old name for the appliance like install option, that _uses_ Docker. It was renamed in January 2020 and is now called _Home Assistant OS_."
   },
   {
     "CommandName": "integration",
