@@ -802,5 +802,9 @@
   {
     "CommandName": "sd",
     "CommandData": "SD cards die - the more you write to them, the sooner they die. You can get a longer life with an Industrial SD card, or ones designed for 24x7 camera recording.\n\nYou're better off moving off the SD cards though, either use an SSD or replace that Pi with just about any 64 bit capable system from the last decade."
+  },
+  {
+    "CommandName": "supervised",
+    "CommandData": "Home Assistant Supervised is considered advanced and should only be used if you are an expert in managing a Linux operating system, Docker and networking. Maintaining a Debian installation to a very specific set of requirements is hard.\n\nYou are going to regret using this method."
   }
 ]
