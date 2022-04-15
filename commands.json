@@ -601,7 +601,7 @@
   },
   {
     "CommandName": "integration",
-    "CommandData": "Integrations _integrate_ Home Assistant with devices or services, or provide functionality within Home Assistant.\n\nAdd-ons provide additional software or services, which an integration could possibility integrate with. Add-ons are for Home Assistant OS and Supervised only, other install methods can install software other ways."
+    "CommandData": "<#672220541343760384> _integrate_ Home Assistant with devices or services, or provide functionality within Home Assistant.\n\n<#672220642099200000> provide additional software or services, which an integration could possibility integrate with. Add-ons are for Home Assistant OS and Supervised only, other install methods can install software other ways."
   },
   {
     "CommandName": "Windows",
