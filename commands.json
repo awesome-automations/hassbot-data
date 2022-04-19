@@ -805,6 +805,10 @@
   },
   {
     "CommandName": "supervised",
-    "CommandData": "Home Assistant Supervised is considered advanced and should only be used if you are an expert in managing a Linux operating system, Docker and networking. Maintaining a Debian installation to a very specific set of requirements is hard.\n\nYou are going to regret using this method."
+    "CommandData": "Home Assistant Supervised is considered advanced and should only be used if you are an expert in managing a Linux operating system, Docker and networking. Maintaining a Debian installation to a very specific set of requirements is hard.\n\nInsecure installations and Unsupported configurations will result if you dont know what you are doing.\n\nYou **MAY** regret using this method."
+  },
+  {
+    "CommandName": "wawft",
+    "CommandData": "Maybe my Code or Blog will help you, found here: \n\nWhatAreWeFixing.Today [Home Assistant GIT Config](https://github.com/SirGoodenough/Home-Assistant-Config) & [Blueprint Repo](https://github.com/SirGoodenough/Home-Assistant-Config) & [Website](https://www.WhatAreWeFixing.Today/)."
   }
 ]
