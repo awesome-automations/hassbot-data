@@ -437,7 +437,7 @@
   },
   {
     "CommandName": "jinja",
-    "CommandData": "[Jinja Template Designer Documentation](https://jinja.palletsprojects.com/en/latest/templates/)\n\nFor more examples and samples, visit see [this page](https://github.com/skalavala/mysmarthome/tree/master/jinja_helpers#jinja-code-for-ninjas)."
+    "CommandData": "[Jinja Template Designer Documentation](https://jinja.palletsprojects.com/en/latest/templates/)\n\nMuch of the power of Jinja comes from its [filters](https://jinja.palletsprojects.com/en/latest/templates/#list-of-builtin-filters) and [tests](https://jinja.palletsprojects.com/en/latest/templates/#list-of-builtin-tests).\n\nFor more examples and samples, visit see [this page](https://github.com/skalavala/mysmarthome/tree/master/jinja_helpers#jinja-code-for-ninjas)."
   },
   {
     "CommandName": "repos",
