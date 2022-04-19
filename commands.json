@@ -1,7 +1,7 @@
 [
   {
     "CommandName": "format",
-    "CommandData": "To format your text as code, enter three backticks on the first line, press Enter for a new line, paste your code, press Enter again for another new line, and lastly three more backticks. [Here's an example](https://raw.githubusercontent.com/awesome-automations/hassbot-data/master/format.gif)\n\nDon't forget you can edit your post rather than repeatedly posting the same thing.\n\n**For over 15 lines** you must use a code share site such as <https://www.codepile.net/> (pick _YAML_ for the language) or <https://paste.debian.net/> (pick _YAML_ for the language)."
+    "CommandData": "To format your text as code, enter three backticks on the first line, press Enter for a new line, paste your code, press Enter again for another new line, and lastly three more backticks. [Here's an example](https://raw.githubusercontent.com/awesome-automations/hassbot-data/master/format.gif)\n\nDon't forget you can edit your post rather than repeatedly posting the same thing.\n\n**For over 15 lines** you must use a code share site such as <https://dpaste.org/> (pick _YAML_ for the language), <https://www.codepile.net/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language)."
   },
   {
     "CommandName": "rpi4",
@@ -13,7 +13,7 @@
   },
   {
     "CommandName": "share",
-    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <https://www.codepile.net/> (select _YAML_ as the language)\n* <https://paste.debian.net/> (select _YAML_ as the language)\n* <https://dpaste.org/> (you guessed it, select _YAML_)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
+    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <https://dpaste.org/> (you guessed it, select _YAML_)\n* <https://www.codepile.net/> (select _YAML_ as the language)\n* <https://paste.debian.net/> (select _YAML_ as the language)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
   },
   {
     "CommandName": "z-wave",
@@ -597,7 +597,7 @@
   },
   {
     "CommandName": "codewall",
-    "CommandData": "**Rule #6:** Please do not post codewalls (text longer than ***15 lines***) - use sites such as <https://www.codepile.net/> (pick _YAML_ for the language) or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
+    "CommandData": "**Rule #6:** Please do not post codewalls (text longer than ***15 lines***) - use sites such as <https://dpaste.org/> (pick _YAML_ for the language), <https://www.codepile.net/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
   },
   {
     "CommandName": "what",
