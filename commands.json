@@ -1,15 +1,19 @@
 [
   {
     "CommandName": "format",
-    "CommandData": "To format your text as code, enter three backticks on the first line, press Enter for a new line, paste your code, press Enter again for another new line, and lastly three more backticks. [Here's an example](https://raw.githubusercontent.com/awesome-automations/hassbot-data/master/format.gif)\n\nDon't forget you can edit your post rather than repeatedly posting the same thing.\n\n**For over 15 lines** you must use a code share site such as <https://paste.ubuntu.com/> or <https://www.hastebin.com/>."
+    "CommandData": "To format your text as code, enter three backticks on the first line, press Enter for a new line, paste your code, press Enter again for another new line, and lastly three more backticks. [Here's an example](https://raw.githubusercontent.com/awesome-automations/hassbot-data/master/format.gif)\n\nDon't forget you can edit your post rather than repeatedly posting the same thing.\n\n**For over 15 lines** you must use a code share site such as <https://www.codepile.net/> (pick _YAML_ for the language) or <https://paste.debian.net/> (pick _YAML_ for the language)."
+  },
+  {
+    "CommandName": "rpi4",
+    "CommandData": "**Trying to install HassOS with an SSD in Rpi4?** Things you need to know: \n\n1) USB boot is supported only by the 64-bit [5.x dev images](https://github.com/home-assistant/operating-system/releases) as of now. (You installed a 5.x image but it's not working? -> Make sure it's actually the 64-bit version!). \n2)Make sure your Pi is updated to a stable [bootloader](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md#usbmassstorageboot) release that supports USB boot \n3) If install still fails, then your SSD likely needs [quirks enabled](https://www.raspberrypi.org/forums/viewtopic.php?t=245931) to work correctly. Find your adapter's ID and add the quirks parameter to your `cmdline.txt` file (found in the boot partition) once you've flashed your 5.x HassOS image of choice on the SSD. \n4) If no SD card is used add `sd_poll_once=on` to `dtparam` in `config.txt` to get rid of `mmc0: timeout waiting for hardware interrupt` kernel errors. \n\nIf install is still failing then your SSD is perhaps not supported by uboot. Try a different drive if you have another one."
   },
   {
     "CommandName": "help",
-    "CommandData": "Welcome to the Home Assistant Discord.\n\nPlease remember to read <#331130181102206976> and the welcome message that the bot (that'd be me) DMd you.\n\nEvery channel has a topic that explains what's on topic, and provides other information. Many also have pinned messages that can help you.\n\nWhen you're done reading this, head over to <#397426163649216512> and say hi."
+    "CommandData": "Welcome to the Home Assistant Discord.\n\nPlease remember to read <#331130181102206976> and the welcome message that the bot (that'd be me) DMd you.\n\nEvery channel has a topic that explains what's on topic, and provides other information. Many also have pinned messages that can help you.\n\nWhen you're done reading this, head over to <#397426163649216512> and say hi, or the the relevant channel if you need help (if you're unsure, start in <#332167321311510530>)."
   },
   {
     "CommandName": "share",
-    "CommandData": "Please use <https://paste.ubuntu.com/> to share code or logs. Please don't use Pastebin, since it can randomly add spaces to the main view."
+    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <https://www.codepile.net/> (select _YAML_ as the language)\n* <https://paste.debian.net/> (select _YAML_ as the language)\n* <https://dpaste.org/> (you guessed it, select _YAML_)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
   },
   {
     "CommandName": "z-wave",
@@ -30,10 +34,6 @@
   {
     "CommandName": "mosquitto",
     "CommandData": "If you want to test out your MQTT install from your pi, first install [the client](https://mosquitto.org/2013/01/mosquitto-debian-repository/) and then use the following command to subscribe to all topics on your server:\n```shell\n$ mosquitto_sub -h IP_ADDRESS -u 'pi' -P 'raspberry' -t '#' -v\n```"
-  },
-  {
-    "CommandName": "checkconfig",
-    "CommandData": "http://quadflightdiy.com/wp-content/uploads/2017/07/Home-Assistant-1.png"
   },
   {
     "CommandName": "checkconfigui",
@@ -105,7 +105,7 @@
   },
   {
     "CommandName": "jinja2",
-    "CommandData": "Jinja is used by Home Assistant's template engine, see the [Jinja Template Designer Documentation](http://jinja.pocoo.org/docs/dev/templates/)"
+    "CommandData": "Jinja is used by Home Assistant's template engine, see the [Jinja Template Designer Documentation](https://jinja.palletsprojects.com/en/latest/templates/)\n\nFor more examples and samples, visit see [this page](https://github.com/skalavala/mysmarthome/tree/master/jinja_helpers#jinja-code-for-ninjas)."
   },
   {
     "CommandName": "aiohttp_bug",
@@ -213,11 +213,11 @@
   },
   {
     "CommandName": "tasmota",
-    "CommandData": "***Ready to use custom firmware for ESP8266 devices (including Sonoff)***\n--------------------------------------------------------------------\nDocs: \n<https://tasmota.github.io/docs/>\n\nDiscord: \n<https://discord.gg/Ks2Kzd4>"
+    "CommandData": "***Ready to use custom firmware for ESP8266 devices (including Sonoff)***\n--------------------------------------------------------------------\nDocs: \n<https://tasmota.github.io/docs/>\n\nThey have their own [Discord server](https://discord.gg/Ks2Kzd4>) or you can ask in <#444529271806099486>"
   },
   {
     "CommandName": "python",
-    "CommandData": "Python 3.8 is the minimum version of Python supported by Home Assistant, with 3.9 being recommended. If you're using a Python virtual environment install you can install an updated version of Python, then manually upgrade your venv as described in <https://blog.ceard.tech/2017/12/upgrading-python-virtual-environment.html>"
+    "CommandData": "Python 3.9 is the minimum version of Python supported by Home Assistant, with 3.9 being recommended. If you're using a Python virtual environment install you can install an updated version of Python, then manually upgrade your venv as described in <https://blog.ceard.tech/2017/12/upgrading-python-virtual-environment.html>"
   },
   {
     "CommandName": "norien",
@@ -305,7 +305,7 @@
   },
   {
     "CommandName": "nuc",
-    "CommandData": "To setup Home Assistant on Intel NUC i7, follow [this guide](https://chris.0x711.de/index.php/2018/01/31/setting-up-home-assistant-in-a-virtual-environment-on-intel-nuc/)"
+    "CommandData": "To setup Home Assistant on Intel NUC i7, follow [this guide](https://chris.0x711.de/2018-01-31-setting-up-home-assistant-in-a-virtual-environment-on-intel-nuc/)"
   },
   {
     "CommandName": "Videos",
@@ -314,10 +314,6 @@
   {
     "CommandName": "group",
     "CommandData": "[Groups](https://home-assistant.io/integrations/group/) allow the user to combine multiple entities into one."
-  },
-  {
-    "CommandName": "hassio-version",
-    "CommandData": "The [latest version information](https://s3.amazonaws.com/hassio-version/stable.json) for various Home Assistant OS components."
   },
   {
     "CommandName": "dale3h",
@@ -333,7 +329,7 @@
   },
   {
     "CommandName": "crosspost",
-    "CommandData": "**Please DO NOT cross post.**  Read the channel description, post it and wait for folks to respond.\n\nIf you don't get any responses after an hour or more, and your message is no longer on screen, it is fine to re-post or post a link to it."
+    "CommandData": "**Please DO NOT cross post.**  Read the channel description, post it and wait for folks to respond. Crossposting wastes people's time as they're unaware of the help you're getting elsewhere.\n\nIf you don't get any responses after an hour or more, and your message is no longer on screen, it is fine to re-post or post a link to it."
   },
   {
     "CommandName": "troubleshooting",
@@ -440,16 +436,12 @@
     "CommandData": "My [Github Repo](https://github.com/klaasnicolaas/Smarthome-homeassistant-config)"
   },
   {
-    "CommandName": "32bit",
-    "CommandData": "The 32bit image is recomended over 64bit because of addon compatibility, performance issues and none of these boards has +4GB of RAM, so you would not get any real advantage with it."
-  },
-  {
     "CommandName": "sinker1345",
     "CommandData": "Have a peek at [my github](https://github.com/sinker1345/Home-Assistant-Configuration) maybe it can help"
   },
   {
     "CommandName": "jinja",
-    "CommandData": "[Jinja Template Designer Documentation](http://jinja.pocoo.org/docs/dev/templates/)\nFor more examples and samples, visit see [this page](https://github.com/skalavala/mysmarthome/tree/master/jinja_helpers#jinja-code-for-ninjas)"
+    "CommandData": "[Jinja Template Designer Documentation](https://jinja.palletsprojects.com/en/latest/templates/)\n\nMuch of the power of Jinja comes from its [filters](https://jinja.palletsprojects.com/en/latest/templates/#list-of-builtin-filters) and [tests](https://jinja.palletsprojects.com/en/latest/templates/#list-of-builtin-tests).\n\nFor more examples and samples, visit see [this page](https://github.com/skalavala/mysmarthome/tree/master/jinja_helpers#jinja-code-for-ninjas)."
   },
   {
     "CommandName": "repos",
@@ -465,7 +457,7 @@
   },
   {
     "CommandName": "rule6",
-    "CommandData": "**Rule #6:** Spam will not be tolerated, including but not limited to: self-promotion, flooding, text walls (longer than 15 lines) and unapproved bots.\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*\n\nFor sharing code or logs use <https://paste.ubuntu.com/>."
+    "CommandData": "**Rule #6:** Spam will not be tolerated, including but not limited to: self-promotion, flooding, text walls (longer than 15 lines) and unapproved bots.\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*\n\nFor sharing code or logs use <https://www.codepile.net/> (pick _YAML_ for the language) or <https://paste.debian.net/> (pick _YAML_ for the language)."
   },
   {
     "CommandName": "RTFM",
@@ -505,7 +497,7 @@
   },
   {
     "CommandName": "ask",
-    "CommandData": "[Don't ask to ask](https://dontasktoask.com/), just ask your question. Then people can answer when they're around.\n\nWhen you do ask a question, try to provide as much background detail as possible. Ask yourself these questions first so that others don't have to:\n\n1. *What version of the Home Assistant are you running? (remember, _last_ isn't a version)*\n2. *What exactly are you trying to do that won't work?*\n3. *Is the problem uniform or erratic?*\n4. *What's the exact error message?*\n5. *When did it arise?*\n6. *What exactly don't you \\\"get\\\"?*\n7. *Can you [share](https://paste.ubuntu.com/) sample code, ideally with line errors where the error occurs?*"
+    "CommandData": "[Don't ask to ask](https://dontasktoask.com/), just ask your question. Then people can answer when they're around.\n\nWhen you do ask a question, try to provide as much background detail as possible. Ask yourself these questions first so that others don't have to:\n\n1. *What version of the Home Assistant are you running? (remember, _last_ isn't a version)*\n2. *What exactly are you trying to do that won't work?*\n3. *Is the problem uniform or erratic?*\n4. *What's the exact error message?*\n5. *When did it arise?*\n6. *What exactly don't you \\\"get\\\"?*\n7. *Can you [share](https://www.codepile.net/) sample code, ideally with line errors where the error occurs?*"
   },
   {
     "CommandName": "question",
@@ -513,7 +505,7 @@
   },
   {
     "CommandName": "images",
-    "CommandData": "Please use [imgur](https://imgur.com/) or other image sharing web sites, and share the link here."
+    "CommandData": "Please use [imgur](https://imgur.com/) or other image sharing web sites, and share the link here.\n\nImage posting is blocked in most channels to discourage people from sharing text as images. Sharing text as images assumes that everybody sees the world as you do, which isn't the case. Some people are colour blind, or have visual impairment that means they can't make sense of an image of text."
   },
   {
     "CommandName": "tracker-owntracks",
@@ -521,7 +513,7 @@
   },
   {
     "CommandName": "issues",
-    "CommandData": "Want to see what issues are open (or were open and are now closed)?\n\n* [The core (backend)](https://github.com/home-assistant/core/issues) - for HA itself, and integrations\n* [The frontend (UI)](https://github.com/home-assistant/frontend/issues) - for cards and display issues\n* [The Supervisor](https://github.com/home-assistant/supervisor)\n* [HassOS](https://github.com/home-assistant/operating-system/issues)\n* [The documentation](https://github.com/home-assistant/home-assistant.io/issues)\n\nFinally, don't forget to check for any [alerts](https://alerts.home-assistant.io/)"
+    "CommandData": "Want to see what issues are open (or were open and are now closed)?\n\n* [The core (backend)](https://github.com/home-assistant/core/issues) - for HA itself, and integrations\n* [The frontend (UI)](https://github.com/home-assistant/frontend/issues) - for cards and display issues\n* [The Supervisor](https://github.com/home-assistant/supervisor)\n* [HassOS](https://github.com/home-assistant/operating-system/issues)\n* [The documentation](https://github.com/home-assistant/home-assistant.io/issues)\n\nDon't forget to check for any [alerts](https://alerts.home-assistant.io/)\n\nIf you think an upgrade broke something then:\n1. Downgrade to the previous version to check if it works correctly there\n2. If it does then change the `logger` settings for that integration to `debug`\n3. Upgrade to the new version again\n4. Look in the logs for errors\n5. Open an issue, following the template provided and including the log information"
   },
   {
     "CommandName": "llat",
@@ -533,7 +525,7 @@
   },
   {
     "CommandName": "check",
-    "CommandData": "***Always*** run the [configuration check *command*](<https://www.home-assistant.io/docs/configuration/troubleshooting/#problems-with-the-configuration>) when you make changes. Don't trust the UI check - it misses some problems."
+    "CommandData": "***Always*** run the configuration check *command* when you make changes. Don't trust the UI check - it misses some problems.\n\n* HAOS & Supervised use [`ha core check`](https://www.home-assistant.io/common-tasks/os/#configuration-check)\n* Container uses [`docker` commands](https://www.home-assistant.io/common-tasks/container/#configuration-check)\n* Core requires you to [activate the venv first](https://www.home-assistant.io/common-tasks/core/#configuration-check)"
   },
   {
     "CommandName": "list",
@@ -569,7 +561,7 @@
   },
   {
     "CommandName": "monitor",
-    "CommandData": "As an alternative to HA built-in bluetooth tracking, [the monitor script](https://github.com/andrewjfreyer/monitor) uses separate devices, usually [Pi Zeroes](https://www.raspberrypi.org/products/raspberry-pi-zero/), to track bluetooth devices.\nIt uses MQTT topics to relay device status messages to HA. See [this forum thread](https://community.home-assistant.io/t/monitor-reliable-multi-user-distributed-bluetooth-occupancy-presence-detection/68505) for more."
+    "CommandData": "As an alternative to HA built-in bluetooth tracking, [the monitor script](https://github.com/andrewjfreyer/monitor) uses separate devices, usually [Pi Zeroes](https://www.raspberrypi.org/products/raspberry-pi-zero/), to track bluetooth devices.\nIt uses MQTT topics to relay device status messages to HA. See [this forum thread](https://community.home-assistant.io/t/monitor-reliable-multi-user-distributed-bluetooth-occupancy-presence-detection/68505) for more.\n\nThere is also an [add-on](https://github.com/Limych/addon-presence-monitor) available for it."
   },
   {
     "CommandName": "explain",
@@ -585,15 +577,7 @@
   },
   {
     "CommandName": "irc",
-    "CommandData": "Discord isn't like IRC, you don't have to tag people on every response. Keep in mind that every time you tag somebody, they get a notification ping. That can very quickly become annoying and people may block you.\n\nWhen using Discord's new _Reply_ feature it defaults to pinging the person you reply to, click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar."
-  },
-  {
-    "CommandName": "moved",
-    "CommandData": "In 0.97 and beyond some menu options have moved. If you can't find an option you used to have try enabling 'Advanced Mode' (go to your HA user profile to find this option), and then go to [Configuration > Server Control](https://my.home-assistant.io/redirect/server_controls)"
-  },
-  {
-    "CommandName": "hass_io",
-    "CommandData": "[Home Assistant Core](https://www.home-assistant.io) is the software we all run. [Home Assistant](https://www.home-assistant.io/hassio/) (previously called Hass.io) is _one of_ the ways you can [install](https://www.home-assistant.io/docs/installation/) **Home Assistant Core**. You're still running Home Assistant Core."
+    "CommandData": "Discord isn't like IRC, you don't have to tag people on every response. Keep in mind that every time you tag somebody, they get a notification ping. That can very quickly become annoying and people may block you.\n\nWhen using Discord's new _Reply_ feature it defaults to pinging the person you reply to, click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar.\n\nYou have to change this every time (thank the Discord devs for that)."
   },
   {
     "CommandName": "tediore",
@@ -609,11 +593,11 @@
   },
   {
     "CommandName": "zigbee",
-    "CommandData": "There are three Zigbee options with Home Assistant (regardless of how you install it). These are:\n\n[deCONZ](https://www.home-assistant.io/integrations/deconz/) is relatively stable and mature with its own UI (and [Discord server](https://discord.gg/RNTwa6d)). It can run in an add-on, in a Docker container, or natively. Only the ConBee range of sticks and RaspBee GPIO boards are support. Known working devices are documented, and how to request support for a new device is documented too (you can't add unsupported devices yourself).\n\n[zha](https://www.home-assistant.io/integrations/zha/) is actively developed as part of Home Assistant Core, using the zigpy stack, the UI also being part of Home Assistant. The EmberZNet based sticks are recommended, but there [are other options](https://www.home-assistant.io/integrations/zha#known-working-zigbee-radio-modules). There is no list of supported devices, as any standards compliant device should work. Devices that require extra support are listed, and adding unsupported devices is documented (you can't add unsupported devices yourself).\n\n[Zigbee2MQTT](https://www.zigbee2mqtt.io/) is very actively developed and can run in an add-on, in a Docker container, and natively. As of 1.15 has a native UI, and it also uses MQTT for control and configuration. It supports [mostly TI based sticks](https://www.zigbee2mqtt.io/information/supported_adapters.html), with the Zig-Ah-Zig-Ah! and Slaesh's sticks being recommended. The known working devices are [well documented](https://www.zigbee2mqtt.io/information/supported_devices.html) (which usually includes how to pair them so you don't have to find the manual), and adding unsupported devices is also documented."
+    "CommandData": "There are three Zigbee options with Home Assistant (regardless of how you install it). These are:\n\n[deCONZ](https://www.home-assistant.io/integrations/deconz/) is relatively stable and mature with its own UI (and [Discord server](https://discord.gg/RNTwa6d)). It can run in an add-on, in a Docker container, or natively. Only the ConBee range of sticks and RaspBee GPIO boards are supported. Known working devices are documented, and how to request support for a new device is documented too (you can't add unsupported devices yourself).\n\n[zha](https://www.home-assistant.io/integrations/zha/) is actively developed as part of Home Assistant Core, using the zigpy stack, the UI also being part of Home Assistant. The EmberZNet based sticks are recommended (though the HUSBZB-1 uses an older chipset), but there [are other options](https://www.home-assistant.io/integrations/zha#known-working-zigbee-radio-modules). There is no list of supported devices, as any standards compliant device should work. Devices that require extra support are listed, and adding unsupported devices is documented.\n\n[Zigbee2MQTT](https://www.zigbee2mqtt.io/) is very actively developed and can run in an add-on, in a Docker container, and natively. As of 1.15 has a native UI, and it also uses MQTT for control and configuration. It supports [mostly TI based sticks](https://www.zigbee2mqtt.io/information/supported_adapters.html), with the recommended option being the [CC2652 based sticks](https://discord.com/channels/330944238910963714/551843655682490399/834770749012181052). If you want to use an EmberZNet stick see [this issue](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269). The known working devices are [well documented](https://www.zigbee2mqtt.io/information/supported_devices.html) (which usually includes how to pair them so you don't have to find the manual), and adding unsupported devices is also documented."
   },
   {
     "CommandName": "codewall",
-    "CommandData": "**Rule #6:** Please do not post codewalls (longer than ***15 lines***) - use sites such as https://paste.ubuntu.com/ (just not Pastebin).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
+    "CommandData": "**Rule #6:** Please do not post codewalls (text longer than ***15 lines***) - use sites such as <https://www.codepile.net/> (pick _YAML_ for the language) or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
   },
   {
     "CommandName": "what",
@@ -621,11 +605,11 @@
   },
   {
     "CommandName": "hassio",
-    "CommandData": "Hass.io was the old name for the appliance like install option, that _uses_ Docker. It is now simply called _Home Assistant OS_ (see <#330990055533576204>)."
+    "CommandData": "Hass.io was the old name for the appliance like install option, that _uses_ Docker. It was renamed in January 2020 and is now called _Home Assistant OS_."
   },
   {
     "CommandName": "integration",
-    "CommandData": "Integrations _integrate_ Home Assistant with devices or services, or provide functionality within Home Assistant. Add-ons provide additional software or services, which an integration could possibility integrate with. Add-ons are for Home Assistant OS and Supervised only, other install methods can install software other ways."
+    "CommandData": "<#672220541343760384> _integrate_ Home Assistant with devices or services, or provide functionality within Home Assistant.\n\n<#672220642099200000> provide additional software or services, which an integration could possibility integrate with. Add-ons are for Home Assistant OS and Supervised only, other install methods can install software other ways."
   },
   {
     "CommandName": "Windows",
@@ -637,7 +621,7 @@
   },
   {
     "CommandName": "esphome",
-    "CommandData": "[ESPHome](https://www.home-assistant.io/integrations/esphome/) is a system to control your ESP8266/ESP32, with a [native integration](https://www.home-assistant.io/integrations/esphome/) for Home Assistant.\n\nYou can find their [documentation here](https://esphome.io/), and get help with ESPHome itself here in the <#444529271806099486> channel (<#672220541343760384> for the integration). They also have their own [Discord server too](https://discord.gg/KhAMKrd)."
+    "CommandData": "[ESPHome](https://www.home-assistant.io/integrations/esphome/) is a system to control your ESP8266/ESP32, with a [native integration](https://www.home-assistant.io/integrations/esphome/) for Home Assistant.\n\nYou can find their [documentation here](https://esphome.io/), and get help with ESPHome itself here in the <#444529271806099486> channel (<#672220541343760384> for the Home Assistant side integration with it). They also have their own [Discord server too](https://discord.gg/KhAMKrd)."
   },
   {
     "CommandName": "appdaemon",
@@ -669,19 +653,15 @@
   },
   {
     "CommandName": "test",
-    "CommandData": "To test an automation there's three stages you can follow. Testing the action, the condition and action, and the whole automation:\n\n1) Use _Developer tools_ (<:devtools:619094051878207520>)-> _States_ to find the automation, click <:info:333726950717784064> and then push Execute. If this fails your problem is in the `action:` section, and details should be found in your log file\n2) Use _Developer tools_ -> _Services_ and call `automation.trigger` on the automation with `skip_condition: false`. If the first passes but this fails then the problem is in your `condition:` block\n3) Use _Developer tools_ -> _States_ to find the trigger entity, click the name, then change the state (at the top) to something that'll trigger the automation before pushing _Set State_. If this fails then the problem is with your `trigger:` section, or the automation is turned off (you can check that in _Developer tools -> States_)."
+    "CommandData": "To test an automation there's three stages you can follow. Testing the action, the condition and action, and the whole automation:\n\n1) Use _Configuration_ -> _Automations_ to find the automationand then push _Run Actions_. If this fails your problem is in the `action:` section, and details should be found in your log file\n2) Use _Developer tools_ -> _Services_ and call `automation.trigger` on the automation with `skip_condition: false`. If the first passes but this fails then the problem is in your `condition:` block\n3) Use _Developer tools_ -> _States_ to find the trigger entity, click the name, then change the state (at the top) to something that'll trigger the automation before pushing _Set State_. If this fails then the problem is with your `trigger:` section, or the automation is turned off (you can check that in _Developer tools -> States_).\n\nYou can also see [this section in the docs](https://www.home-assistant.io/docs/automation/troubleshooting/) and with HA 2021.4 onwards [debug automations](https://www.home-assistant.io/blog/2021/04/07/release-20214/#automation-debugging)."
   },
   {
     "CommandName": "error",
     "CommandData": "Please don't say _I have an error_ or describe an error. Share the whole actual error message so we can help you."
   },
   {
-    "CommandName": "compare",
-    "CommandData": "Not sure which install method to use, here's a [simple summary](https://www.home-assistant.io/faq/ha-vs-hassio/):\n\n* [Home Assistant](https://www.home-assistant.io/hassio/installation/): All in one solution with the ability to install other software though the UI (called add-ons), and manage backups in the UI (called snapshots). Installs as an image or on top of Debian/Ubuntu.\n* [Docker](https://www.home-assistant.io/docs/installation/docker/): For those already at comfortable with running on Docker. You install other software and manage backups yourself. Consider another option if you're using Windows or macOS.\n* [venv](https://www.home-assistant.io/docs/installation/raspberry-pi/): For those Linux admins or other crazy folks who want to run bare metal. You do everything, including rebuilding your venv with new Python versions. Don't try this method on Windows.\n\nTL/DR: Use what works for you."
-  },
-  {
     "CommandName": "pickyourstick",
-    "CommandData": "This command exists purely for Mimiix, because he couldn't remember `.zigbee`. Don't see him around so much any more though, maybe he also forgot where the server is?"
+    "CommandData": "Buy something CC2652 based. [This list](https://www.zigbee2mqtt.io/information/supported_adapters.html) is a good one, both [Tube](https://www.tubeszb.com/) and [Electrolama](https://shop.electrolama.com/) have been proven to have excellent customer service. The current generation of EZSP sticks ([see here for some](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269)) are also a good choice for ZHA.\n\nAnything CC2530 or CC2531 based should be avoided - they're old, slow, and only suitable for a dozen or so devices. The Sonoff ZBbridge isn't advised since it uses WiFi (built in interference causing stability/reliability issues), and the HUSBZB-1 uses an older chipset so should be avoided.\n\nFinally, the ConBee range are fine with deCONZ, but experience with ZHA and Zigbee2MQTT appears to be mixed."
   },
   {
     "CommandName": "tagging",
@@ -729,7 +709,7 @@
   },
   {
 	"CommandName": "swag",
-	"CommandData": "[Secure Web Application Gateway](https://docs.linuxserver.io/general/swag) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention."
+	"CommandData": "[Secure Web Application Gateway](https://docs.linuxserver.io/general/swag) aka SWAG - is the easiest way of setting up a reverse proxy server with SSL (using Certbot and LetsEncrypt) for your Docker based install. See [their documentation](https://docs.linuxserver.io/general/swag) on it, and if you get stuck they also have [a Discord server](https://discord.gg/YWrKVTn) and [forum](https://docs.linuxserver.io/general/swag)."
   },
   {
 	"CommandName": "tts",
@@ -745,7 +725,7 @@
   },
   {
 	  "CommandName": "cc253x",
-	  "CommandData": "The CC2531 and CC2530 sticks are cheap for a reason. They're fine for testing, but do yourself a favour and buy something better."
+	  "CommandData": "The CC2531 and CC2530 sticks are cheap for a reason. They're fine for testing, but do yourself a favour and buy something better.\n\nWhat something better? Anything CC2652 based ([see here for some](https://www.zigbee2mqtt.io/information/supported_adapters.html)) or the current generation EZSP ([see here for some](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269)).\n\nThe Sonoff ZBbridge isn't advised since it uses WiFi, and the HUSBZB-1 uses an older chipset so should be avoided."
   },
   {
 	  "CommandName": "patience",
@@ -772,15 +752,71 @@
     "CommandData": "If you have questions about the security bulletin the only place to find the answers is in [the blog post](https://www.home-assistant.io/blog/2021/01/14/security-bulletin/). If the information isn't there we can't tell you, because we don't know either.\n\nPS: We also don't know when it'll be updated.\n\nIf you have any questions, they're best asked on the linked [forum thread](https://community.home-assistant.io/t/security-bulletin/268456/)."
   },
   {
-    "CommandName": "lost_os",
-    "CommandData": "Oh, hi there :wave: You seem to be lost.\n\nI know the naming convention for the install methods is confusing. Having Core be a method and the software are the heart of it all doesn't help. That and having three methods that _use_ Docker.\n\nHowever, this isn't your install method, so we can't really help you effectively here. You should head over to <#330990055533576204> where people know Home Assistant OS and can help you.\n\nIf you want to mute and hide this channel before you go then you won't end up here in error again, and should get help faster."
+    "CommandName": "reply",
+    "CommandData": "When using Discord's _Reply_ feature it defaults to pinging the person you reply to, which can get frustrating for the target. Use _Shift + click_ on the _Reply_ option, or click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar.\n\nYou have to change this every time (thank the Discord devs for that)."
   },
   {
-    "CommandName": "lost_supervised",
-    "CommandData": "Oh, hi there :wave: You seem to be lost.\n\nI know the naming convention for the install methods is confusing. Having Core be a method and the software are the heart of it all doesn't help. That and having three methods that _use_ Docker.\n\nHowever, this isn't your install method, so we can't really help you effectively here. You should head over to <#330944238910963714> where people know Home Assistant Supervised and can help you.\n\nIf you want to mute and hide this channel before you go then you won't end up here in error again, and should get help faster."
+    "CommandName": "ffs",
+    "CommandData": "When using Discord's _Reply_ feature it defaults to pinging the person you reply to, which can get **very frustrating for the target**. Use _Shift + click_ on the _Reply_ option, or click `@ ON` to `@ OFF` to stop this - on the right side of the compose bar - you have to do this on every reply.\n\nOr don't, and just wait for the recipient to get annoyed enough to block you."
   },
   {
-    "CommandName": "lost",
-    "CommandData": "Oh, hi there :wave: You seem to be lost.\n\nI know the naming convention for the install methods is confusing. Having Core be a method and the software are the heart of it all doesn't help. That and having three methods that _use_ Docker.\n\nHowever, this isn't your install method, so we can't really help you effectively here. Look in _Configuration -> Info_ for your _Installation Method_ and then go to the channel with that name. There you'll find people who know your method and can help you.\n\nIf you want to mute and hide this channel before you go then you won't end up here in error again, and should get help faster."
+    "CommandName": "raccoon",
+    "CommandData": "There can be only one."
+  },
+  {
+    "CommandName": "zigbeestick",
+    "CommandData": "For Zigbee2MQTT any CC2652p (or CC2652) based stick is a good choice. Those are also a good choice for ZHA, which also supports the EmberZNet sticks ([see here for some details](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269)). Don't pick the cheap CC2530/CC2531 sticks, and avoid the Sonoff Zigbee bridge since Zigbee and WiFi aren't friends. If you're not using deCONZ avoid the ConBee and RaspBee devices."
+  },
+  {
+    "CommandName": "readme",
+    "CommandData": "Remember, a few hours of trial and error can save you several minutes of reading the documentation."
+  },
+  {
+    "CommandName": "blue",
+    "CommandData": "The [Home Assistant Blue](https://www.home-assistant.io/blue) is an ODROID-N2+ in a custom case."
+  },
+  {
+    "CommandName": "amber",
+    "CommandData": "See the <#887751499785072711> channel for everything to do with the [Home Assistant Yellow](https://www.home-assistant.io/yellow)."
+  },
+  {
+    "CommandName": "yellow",
+    "CommandData": "See the <#887751499785072711> channel for everything to do with the [Home Assistant Yellow](https://www.home-assistant.io/yellow)."
+  },
+  {
+    "CommandName": "trigger",
+    "CommandData": "There are three sections to an automation:\n\n* [**`trigger`**](https://www.home-assistant.io/docs/automation/trigger/): When _any_ of these _becomes true_ the automation starts processing.\n* [**`condition`**](https://www.home-assistant.io/docs/automation/condition/): These are checked after a `trigger` starts the processing, and must _be true_ for the automation to continue.\n* [**`action`**](https://www.home-assistant.io/docs/scripts/): This is the part that does something, and can also include further conditions."
+  },
+  {
+    "CommandName": "hello",
+    "CommandData": "Please don't just say [hello](https://nohello.net/), post your question too."
+  },
+  {
+    "CommandName": "hi",
+    "CommandData": "Please don't just say [hi](https://nohello.net/), post your question too."
+  },
+  {
+    "CommandName": "hasswp",
+    "CommandData": "Don't use HassWP, it's unsupported and unsupportable. It runs Home Assistnat directly in Windows, which means many things won't work, and relies on the developer to keep it updated (which often isn't the case).\n\nJust use a [supported installation approach](https://www.home-assistant.io/installation#compare-installation-methods) and you'll have less pain."
+  },
+  {
+    "CommandName": "pr",
+    "CommandData": "If you have an open PR and are waiting for feedback, please be patient and do not beg for a review. We have a huge backlog of PRs at any given moment and while the core reviewers do their best to get to PRs in a timely fashion, what's considered timely has grown over time. The best way that you can help us get to your PRs faster is to look at other PRs and add your reviews - even though PRs need a core reviewer for a formal approval, reviews from the community will help reduce the back and forth and make reviews easier for the core team.\n\nWith all that being said, if you have an open PR that gets a stale label added to it, add a comment so the bot will remove the label, and THEN you can post here asking for help since we want to make sure that PRs don't get auto-closed because of a lack of feedback."
+  },
+  {
+    "CommandName": "schedy",
+    "CommandData": "[Schedy](https://hass-apps.readthedocs.io/en/stable/apps/schedy/) is a highly-configurable, comfortable to use multi-purpose scheduler for Home Assistant that controls different types of actors such as switches and thermostats based on powerful rules while still facilitating manual intervention at any time.\n\nThe goal is to provide an easy solution for conventional scheduling (e.g. by time of day and day of week) while leaving advanced users plenty of room for customization with arbitrarily complex rules."
+  },
+  {
+    "CommandName": "sd",
+    "CommandData": "SD cards die - the more you write to them, the sooner they die. You can get a longer life with an Industrial SD card, or ones designed for 24x7 camera recording.\n\nYou're better off moving off the SD cards though, either use an SSD or replace that Pi with just about any 64 bit capable system from the last decade."
+  },
+  {
+    "CommandName": "supervised",
+    "CommandData": "Home Assistant Supervised is considered advanced and should only be used if you are an expert in managing a Linux operating system, Docker and networking. Maintaining a Debian installation to a very specific set of requirements is hard.\n\nInsecure installations and Unsupported configurations will result if you dont know what you are doing.\n\nYou **MAY** regret using this method."
+  },
+  {
+    "CommandName": "wawft",
+    "CommandData": "Maybe my Code or Blog will help you, found here: \n\nWhatAreWeFixing.Today [Home Assistant GIT Config](https://github.com/SirGoodenough/Home-Assistant-Config) & [Blueprint Repo](https://github.com/SirGoodenough/Home-Assistant-Config) & [Website](https://www.WhatAreWeFixing.Today/)."
   }
 ]
