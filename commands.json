@@ -493,7 +493,7 @@
   },
   {
     "CommandName": "template",
-    "CommandData": "When working with templates, don't forget:\n* You can test them in _Developer tools_ -> _Templates_\n* HA before 0.115: rule 1 and rule 2 (<https://www.home-assistant.io/docs/automation/templating/#important-template-rules>)"
+    "CommandData": "When working with templates, don't forget:\n* You can test them in _Developer tools_ -> [_Templates_](https://my.home-assistant.io/redirect/developer_template/)"
   },
   {
     "CommandName": "ask",
@@ -517,7 +517,7 @@
   },
   {
     "CommandName": "llat",
-    "CommandData": "The LLAT, or [Long Lived Access Token](https://www.home-assistant.io/docs/authentication/#your-account-profile) can be found in your user profile. For examples of using it for the API see the [API docs](https://developers.home-assistant.io/docs/en/external_api_rest.html)"
+    "CommandData": "The LLAT, or [Long Lived Access Token](https://www.home-assistant.io/docs/authentication/#your-account-profile) can be found in your [user profile](https://my.home-assistant.io/redirect/profile/). For examples of using it for the API see the [API docs](https://developers.home-assistant.io/docs/en/external_api_rest.html)"
   },
   {
     "CommandName": "vef",
@@ -645,7 +645,7 @@
   },
   {
     "CommandName": "advanced",
-    "CommandData": "Various settings are hidden unless your user profile has _Advanced mode_ enabled. These include some add-ons, the Lovelace _Resources_ menu, server control options, and more."
+    "CommandData": "Various settings are hidden unless your [user profile](https://my.home-assistant.io/redirect/profile/) has _Advanced mode_ enabled. These include some add-ons, the Lovelace _Resources_ menu, server control options, and more."
   },
   {
     "CommandName": "atxbyea",
@@ -653,7 +653,7 @@
   },
   {
     "CommandName": "test",
-    "CommandData": "To test an automation there's three stages you can follow. Testing the action, the condition and action, and the whole automation:\n\n1) Use _Configuration_ -> _Automations_ to find the automationand then push _Run Actions_. If this fails your problem is in the `action:` section, and details should be found in your log file\n2) Use _Developer tools_ -> _Services_ and call `automation.trigger` on the automation with `skip_condition: false`. If the first passes but this fails then the problem is in your `condition:` block\n3) Use _Developer tools_ -> _States_ to find the trigger entity, click the name, then change the state (at the top) to something that'll trigger the automation before pushing _Set State_. If this fails then the problem is with your `trigger:` section, or the automation is turned off (you can check that in _Developer tools -> States_).\n\nYou can also see [this section in the docs](https://www.home-assistant.io/docs/automation/troubleshooting/) and with HA 2021.4 onwards [debug automations](https://www.home-assistant.io/blog/2021/04/07/release-20214/#automation-debugging)."
+    "CommandData": "To test an automation there's three stages you can follow. Testing the action, the condition and action, and the whole automation:\n\n1) Use _Configuration_ -> _Automations_ to find the automationand then push _Run Actions_. If this fails your problem is in the `action:` section, and details should be found in your log file\n2) Use _Developer tools_ -> [_Services_](https://my.home-assistant.io/redirect/developer_services/) and call `automation.trigger` on the automation with `skip_condition: false`. If the first passes but this fails then the problem is in your `condition:` block\n3) Use _Developer tools_ -> [_States_](https://my.home-assistant.io/redirect/developer_states/) to find the trigger entity, click the name, then change the state (at the top) to something that'll trigger the automation before pushing _Set State_. If this fails then the problem is with your `trigger:` section, or the automation is turned off (you can check that in _Developer tools_ -> [_States_](https://my.home-assistant.io/redirect/developer_states/)).\n\nYou can also see [this section in the docs](https://www.home-assistant.io/docs/automation/troubleshooting/) and with HA 2021.4 onwards [debug automations](https://www.home-assistant.io/blog/2021/04/07/release-20214/#automation-debugging)."
   },
   {
     "CommandName": "error",
