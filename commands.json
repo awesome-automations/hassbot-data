@@ -457,7 +457,7 @@
   },
   {
     "CommandName": "rule6",
-    "CommandData": "**Rule #6:** Spam will not be tolerated, including but not limited to: self-promotion, flooding, text walls (longer than 15 lines) and unapproved bots.\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*\n\nFor sharing code or logs use <https://www.codepile.net/> (pick _YAML_ for the language) or <https://paste.debian.net/> (pick _YAML_ for the language)."
+    "CommandData": "**Rule #6:** Spam will not be tolerated, including but not limited to: self-promotion, flooding, text walls (longer than 15 lines) and unapproved bots.\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*\n\nFor sharing code or logs use <https://dpaste.org/> (pick _YAML_ for the language) or <https://www.codepile.net/> (pick _YAML_ for the language)."
   },
   {
     "CommandName": "RTFM",
