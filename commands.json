@@ -818,5 +818,9 @@
   {
     "CommandName": "wawft",
     "CommandData": "Maybe my Code or Blog will help you, found here: \n\nWhatAreWeFixing.Today [Home Assistant GIT Config](https://github.com/SirGoodenough/Home-Assistant-Config) & [Blueprint Repo](https://github.com/SirGoodenough/Home-Assistant-Config) & [Website](https://www.WhatAreWeFixing.Today/)."
+  },
+  {
+    "CommandName": "yamlshare",
+    "CommandData": "Sadly we're not mind readers (any more anyway, not after the last time we tried). Please [share the YAML and any errors](https://dpaste.org/) so we can see what you've done."
   }
 ]
