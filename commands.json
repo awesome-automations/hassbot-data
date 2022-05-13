@@ -822,5 +822,9 @@
   {
     "CommandName": "yamlshare",
     "CommandData": "Sadly we're not mind readers (any more anyway, not after the last time we tried). Please [share the YAML and any errors](https://dpaste.org/) so we can see what you've done."
+  },
+  {
+    "CommandName": "drzzs",
+    "CommandData": "DrZzs has a [Discord server](https://discord.com/invite/drzzs) with channels dedicated to things like LED lighting, 3d printing, and a lot more."
   }
 ]
