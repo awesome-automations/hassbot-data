@@ -457,7 +457,7 @@
   },
   {
     "CommandName": "rule6",
-    "CommandData": "**Rule #6:** Spam will not be tolerated, including but not limited to: self-promotion, flooding, text walls (longer than 15 lines) and unapproved bots.\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*\n\nFor sharing code or logs use <https://dpaste.org/> (pick _YAML_ for the language) or <https://www.codepile.net/> (pick _YAML_ for the language)."
+    "CommandData": "**[Rule #6](https://discord.com/channels/330944238910963714/331130181102206976/848778640015622234):** Spam will not be tolerated, including but not limited to: self-promotion, flooding, text walls (longer than 15 lines) and unapproved bots.\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*\n\nFor sharing code or logs use <https://dpaste.org/> (pick _YAML_ for the language) or <https://www.codepile.net/> (pick _YAML_ for the language)."
   },
   {
     "CommandName": "RTFM",
@@ -597,7 +597,7 @@
   },
   {
     "CommandName": "codewall",
-    "CommandData": "**Rule #6:** Please do not post codewalls (text longer than ***15 lines***) - use sites such as <https://dpaste.org/> (pick _YAML_ for the language), <https://www.codepile.net/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
+    "CommandData": "**[Rule #6](https://discord.com/channels/330944238910963714/331130181102206976/848778640015622234):** Please do not post codewalls (text longer than ***15 lines***) - use sites such as <https://dpaste.org/> (pick _YAML_ for the language), <https://www.codepile.net/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
   },
   {
     "CommandName": "what",
