@@ -72,10 +72,6 @@
     "CommandData": "To get the total number of entities in your Home Assistant setup, use this <:templates:333726940861169666> template:\n```jinja\n{{ states|list|length }}\n```"
   },
   {
-    "CommandName": "customizer",
-    "CommandData": "[Companion component](https://github.com/andrey-git/home-assistant-customizer/) for Home Assistant CustomUI."
-  },
-  {
     "CommandName": "rkaramandi",
     "CommandData": "Visit Rohan [Karamandi's Github](https://github.com/rkaramandi) and follow his [Home Automation blog](http://www.karamandi.com/)"
   },
@@ -106,10 +102,6 @@
   {
     "CommandName": "jinja2",
     "CommandData": "Jinja is used by Home Assistant's template engine, see the [Jinja Template Designer Documentation](https://jinja.palletsprojects.com/en/latest/templates/)\n\nFor more examples and samples, visit see [this page](https://github.com/skalavala/mysmarthome/tree/master/jinja_helpers#jinja-code-for-ninjas)."
-  },
-  {
-    "CommandName": "aiohttp_bug",
-    "CommandData": "<https://github.com/home-assistant/home-assistant/issues/6728#issuecomment-288086771>"
   },
   {
     "CommandName": "homebridge",
@@ -189,7 +181,7 @@
   },
   {
     "CommandName": "floorplan",
-    "CommandData": "[Floorplan](https://github.com/pkozul/ha-floorplan) allows you to extend the user interface by adding your own visuals. It also exists [in a Lovelace version](https://github.com/pkozul/lovelace-floorplan/)."
+    "CommandData": "[Floorplan](https://github.com/pkozul/ha-floorplan) allows you to extend the user interface by adding your own visuals. It also exists [in a dashboard version](https://github.com/pkozul/lovelace-floorplan/)."
   },
   {
     "CommandName": "moose",
@@ -201,7 +193,7 @@
   },
   {
     "CommandName": "quotes",
-    "CommandData": "check out the [best practices](https://www.home-assistant.io/developers/documentation/standards/#single-vs-double-quotation-marks) around using quotes in templates."
+    "CommandData": "check out the [best practices](https://developers.home-assistant.io/docs/documenting/yaml-style-guide#strings) around using quotes in templates."
   },
   {
     "CommandName": "vampire",
@@ -276,10 +268,6 @@
     "CommandData": "The **Jedi** role (*blue*) is given to our community members who have proven themselves knowledgable and worthy of helping others. *Please do not request to be assigned this role. It must be earned.*"
   },
   {
-    "CommandName": "cookbook",
-    "CommandData": "[The cookbook](https://home-assistant.io/cookbook/) is a list of example automations. The cookbook also contains links to find people's GitHub copies of their installs."
-  },
-  {
     "CommandName": "github",
     "CommandData": "Check out <@!330904501299183616>'s page for a good [cheat sheet](https://github.com/arsaboo/homeassistant-config/blob/master/HASS%20Cheatsheet.md#backing-up-configurations-on-github)"
   },
@@ -302,10 +290,6 @@
   {
     "CommandName": "split_config",
     "CommandData": "Here is now to [split your configuration](https://home-assistant.io/docs/configuration/splitting_configuration/) into multiple YAML files"
-  },
-  {
-    "CommandName": "nuc",
-    "CommandData": "To setup Home Assistant on Intel NUC i7, follow [this guide](https://chris.0x711.de/2018-01-31-setting-up-home-assistant-in-a-virtual-environment-on-intel-nuc/)"
   },
   {
     "CommandName": "Videos",
@@ -593,7 +577,7 @@
   },
   {
     "CommandName": "zigbee",
-    "CommandData": "There are three Zigbee options with Home Assistant (regardless of how you install it). These are:\n\n[zha](https://www.home-assistant.io/integrations/zha/) is actively developed as part of Home Assistant Core, using the zigpy stack, the UI also being part of Home Assistant. The EmberZNet based sticks are recommended (though the HUSBZB-1 uses an older chipset), but there [are other options](https://www.home-assistant.io/integrations/zha#known-working-zigbee-radio-modules) including the CC2652 based sticks. There is no list of supported devices, as any standards compliant device should work. Devices that require extra support are listed, and adding unsupported devices is documented.\n\n[Zigbee2MQTT](https://www.zigbee2mqtt.io/) is very actively developed and can run in an add-on, in a Docker container, and natively. As of 1.15 has a native UI, and it also uses MQTT for control and configuration. It supports [mostly TI based sticks](https://www.zigbee2mqtt.io/information/supported_adapters.html), with the recommended option being the [CC2652 based sticks](https://discord.com/channels/330944238910963714/551843655682490399/982004122553315360). If you want to use an EmberZNet stick see [this issue](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269). The known working devices are [well documented](https://www.zigbee2mqtt.io/information/supported_devices.html) (which usually includes how to pair them so you don't have to find the manual), and adding unsupported devices is also documented.\n\n[deCONZ](https://www.home-assistant.io/integrations/deconz/) is relatively stable and mature with its own UI (and [Discord server](https://discord.gg/RNTwa6d)). It can run in an add-on, in a Docker container, or natively. Only the ConBee range of sticks and RaspBee GPIO boards are supported. Known working devices are documented, and how to request support for a new device is documented too (you can't add unsupported devices yourself)."
+    "CommandData": "There are three Zigbee options with Home Assistant (regardless of how you install it). These are:\n\n[zha](https://www.home-assistant.io/integrations/zha/) is actively developed as part of Home Assistant Core, using the zigpy stack, the UI also being part of Home Assistant. The EmberZNet based sticks are recommended (though the HUSBZB-1 uses an older chipset), but there [are other options](https://www.home-assistant.io/integrations/zha#known-working-zigbee-radio-modules) including the CC2652 based sticks. There is no list of supported devices, as any standards compliant device should work. Devices that require extra support are listed, and adding unsupported devices is documented.\n\n[Zigbee2MQTT](https://www.zigbee2mqtt.io/) is very actively developed and can run in an add-on, in a Docker container, and natively. As of 1.15 has a native UI, and it also uses MQTT for control and configuration. It supports [mostly TI based sticks](https://www.zigbee2mqtt.io/guide/adapters/#recommended), with the recommended option being the [CC2652 based sticks](https://discord.com/channels/330944238910963714/551843655682490399/982004122553315360). If you want to use an EmberZNet stick see [this issue](https://github.com/Koenkk/zigbee-herdsman/issues/319#issuecomment-789757269). The known working devices are [well documented](https://www.zigbee2mqtt.io/supported-devices/) (which usually includes how to pair them so you don't have to find the manual), and adding unsupported devices is also documented.\n\n[deCONZ](https://www.home-assistant.io/integrations/deconz/) is relatively stable and mature with its own UI (and [Discord server](https://discord.gg/RNTwa6d)). It can run in an add-on, in a Docker container, or natively. Only the ConBee range of sticks and RaspBee GPIO boards are supported. Known working devices are documented, and how to request support for a new device is documented too (you can't add unsupported devices yourself)."
   },
   {
     "CommandName": "codewall",
