@@ -697,7 +697,7 @@
   },
   {
 	"CommandName": "tts",
-	"CommandData": "If `tts` isn't working in your media players (and on a Google device at most you get a _bloop_), then the problem is most likely down to SSL. If you're using SSL in HA make sure that your `external_url` is correctly set, and that `internal_url` matches it. Alternatively set [`base_url`](https://www.home-assistant.io/integrations/tts#base_url) in the `tts` integration to your external SSL URL."
+	"CommandData": "If `tts` isn't working in your media players (and on a Google device at most you get a _bloop_), then the problem is most likely down to SSL. If you're using SSL in HA make sure that your [`external_url`](https://www.home-assistant.io/docs/configuration/basic) is correctly set, and that `internal_url` matches it."
   },
   {
 	  "CommandName": "elevation",
