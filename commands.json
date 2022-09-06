@@ -13,7 +13,7 @@
   },
   {
     "CommandName": "share",
-    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <https://dpaste.org/> (select _YAML_ for the language)\n* <https://paste.debian.net/> (you guessed it, select _YAML_ as the language)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
+    "CommandData": "Please use a code share site to share code or logs, for example:\n\n* <http://pastie.org/> (select _YAML_ for the language)\n\n* <https://dpaste.org/> (select _YAML_ for the language)\n* <https://paste.debian.net/> (you guessed it, select _YAML_ as the language)\n\nPlease don't use Pastebin, since it can randomly add spaces to the main view. Please also don't share text as images since it makes it harder for people to help you. Remember that others may have colour blindness, impaired vision, etc."
   },
   {
     "CommandName": "z-wave",
@@ -581,11 +581,11 @@
   },
   {
     "CommandName": "codewall",
-    "CommandData": "**[Rule #6](https://discord.com/channels/330944238910963714/331130181102206976/848778640015622234):** Please do not post codewalls (text longer than ***15 lines***, including whitespace) - use sites such as <https://dpaste.org/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
+    "CommandData": "**[Rule #6](https://discord.com/channels/330944238910963714/331130181102206976/848778640015622234):** Please do not post codewalls (text longer than ***15 lines***, including whitespace) - use sites such as <http://pastie.org/> (select _YAML_ for the language), <https://dpaste.org/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
   },
   {
     "CommandName": "textwall",
-    "CommandData": "**[Rule #6](https://discord.com/channels/330944238910963714/331130181102206976/848778640015622234):** Please do not post text walls (longer than ***15 lines***, including whitespace) - use sites such as <https://dpaste.org/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
+    "CommandData": "**[Rule #6](https://discord.com/channels/330944238910963714/331130181102206976/848778640015622234):** Please do not post text walls (longer than ***15 lines***, including whitespace) - use sites such as <http://pastie.org/> (select _YAML_ for the language), <https://dpaste.org/> (pick _YAML_ for the language), or <https://paste.debian.net/> (pick _YAML_ for the language).\n\n*Please take the time now to review all of the rules and references in <#331130181102206976>.*"
   },
   {
     "CommandName": "what",
