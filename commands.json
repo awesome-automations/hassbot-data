@@ -814,5 +814,9 @@
   {
     "CommandName": "drzzs",
     "CommandData": "DrZzs has a [Discord server](https://discord.com/invite/drzzs) with channels dedicated to things like LED lighting, 3d printing, and a lot more."
+  },
+  {
+    "CommandName": "502",
+    "CommandData": "If you're getting a 502 from an add-on then the add-on isn't running.\n\nOn Zigbee2MQTT a common cause is having only one Zigbee coordinator/stick and also having enabled ZHA or deCONZ."
   }
 ]
