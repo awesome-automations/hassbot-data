@@ -818,5 +818,9 @@
   {
     "CommandName": "502",
     "CommandData": "If you're getting a 502 from an add-on then the add-on isn't running.\n\nOn Zigbee2MQTT a common cause is having only one Zigbee coordinator/stick and also having enabled ZHA or deCONZ."
+  },
+  {
+    "CommandName": "router",
+    "CommandData": "Most mains powered devices are a Zigbee router, for the exceptions [see this community wiki page](https://community.home-assistant.io/t/mains-powered-zigbee-devices-that-arent-routers/458500)."
   }
 ]
